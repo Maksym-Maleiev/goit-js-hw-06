@@ -1,8 +1,24 @@
-const inputRangeRef = document.querySelector("#font-size-control");
-const inputTextRef = document.querySelector("#text");
+// const inputRangeRef = document.querySelector("#font-size-control");
+// const inputTextRef = document.querySelector("#text");
 
-const handleInput = () => {
-  inputTextRef.style.fontSize = `${inputRangeRef.value}px`;
+// const handleInput = () => {
+//   inputTextRef.style.fontSize = `${inputRangeRef.value}px`;
+// };
+
+// inputRangeRef.addEventListener("input", handleInput);
+
+// ===================
+
+
+const inputEl = document.querySelector("#font-size-control");
+const spanEl = document.querySelector("#text");
+
+inputEl.addEventListener('input', onInputChange);
+
+function onInputChange(event) {
+  spanEl.style.fontSize = event.currentTarget.value + 'px';
 };
 
-inputRangeRef.addEventListener("input", handleInput);
+
+// ==========================
+
