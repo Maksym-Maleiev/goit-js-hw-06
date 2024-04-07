@@ -261,3 +261,11 @@ const images = [
   <button type="button" class="change-color">Change color</button>
 </div>
 ```
+
+Для генерування випадкового кольору використовуй функцію `getRandomHexColor`.
+
+```js
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+```
