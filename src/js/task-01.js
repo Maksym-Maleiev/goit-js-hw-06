@@ -1,10 +1,17 @@
+// const list = document.querySelector('ul');
+// const sumCategories = list.children.length;
+// console.log(`Number of categories: ${sumCategories}`);
+
 const list = document.querySelector('ul');
-const sumCategories = list.children.length;
-console.log(`Number of categories: ${sumCategories}`);
+console.log(list);
 
-const title = list.querySelectorAll('h2');
-console.log(title);
+const items = list.children;
+console.log(items);
 
-list.children.forEach((title, number) => {
-  console.log(`Category: ${title.textContent}`);
-});
+const sum = items => {
+  items.forEach((item, idx) => {
+    console.log(`${idx + 1} of categories: ${item}`);
+  });
+};
+
+sum(items);
