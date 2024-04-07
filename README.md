@@ -81,3 +81,22 @@ Elements: 5
 ```
 
 ## Завдання 2
+
+HTML містить порожній список `ul#ingredients`.
+
+```html
+<ul id="ingredients"></ul>
+```
+
+JavaScript містить масив рядків.
+
+```js
+const ingredients = [
+  'Potatoes',
+  'Mushrooms',
+  'Garlic',
+  'Tomatos',
+  'Herbs',
+  'Condiments',
+];
+```
