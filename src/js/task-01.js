@@ -9,9 +9,9 @@ const items = list.children;
 console.log(items);
 
 const sum = items => {
-  items.forEach((item, idx) => {
-    console.log(`${idx + 1} of categories: ${item}`);
+  items.forEach(item => {
+    console.log(`Number of categories: ${item}`);
   });
 };
 
-sum(items);
+sum();
