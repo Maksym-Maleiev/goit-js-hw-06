@@ -66,3 +66,16 @@ HTML містить список категорій `ul#categories`.
 навігації по DOM.
 
 В результаті, в консолі будуть виведені наступні повідомлення.
+
+```bash
+Number of categories: 3
+
+Category: Animals
+Elements: 4
+
+Category: Products
+Elements: 3
+
+Category: Technologies
+Elements: 5
+```
