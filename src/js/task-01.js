@@ -1,13 +1,15 @@
 const list = document.querySelector('ul');
-console.log(list);
+const sumCategories = list.children.length;
+console.log(`Number of categories: ${sumCategories}`);
 
-const allCategories = list.children;
-console.log(allCategories);
+// const sum = () => {
+//   let a = 0;
 
-const sum = () => {
-  allCategories.forEach(item => {
-    console.log(`Number of categories: ${(item += 1)}`);
-  });
-};
+//   allCategories.forEach(item => {
+//     a = item += 1;
+//   });
 
-sum();
+//   return `Number of categories: ${a}`;
+// };
+
+// sum();
