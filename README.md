@@ -219,3 +219,21 @@ const images = [
 <br />
 <span id="text">Abracadabra!</span>
 ```
+
+## Завдання 8
+
+Напиши скрипт управління формою логіна.
+
+```html
+<form class="login-form">
+  <label>
+    Email
+    <input type="email" name="email" />
+  </label>
+  <label>
+    Password
+    <input type="password" name="password" />
+  </label>
+  <button type="submit">Login</button>
+</form>
+```
