@@ -1,6 +1,6 @@
 console.log('Execise-01');
 
-const list = document.querySelector('ul#categories');
+// const list = document.querySelector('ul#categories');
 // console.log(list);
 
 // const items = list.children;
