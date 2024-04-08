@@ -15,7 +15,7 @@ const sum = items => {
     numbers += 1;
   }
 
-  return numbers;
+  return `Number of categories: ${numbers}`;
 };
 
 console.log(sum(list.children));
