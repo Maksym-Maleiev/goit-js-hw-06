@@ -30,19 +30,18 @@ console.log('Execise-01');
  * Third method
  */
 const items = document.querySelectorAll('.item');
+let numbers = 0;
 
-const sum = () => {
-  let numbers = 0;
+items.forEach(() => {
+  numbers += 1;
+});
 
-  items.forEach(() => {
-    numbers += 1;
-  });
+console.log(`Number of categories: ${numbers}`);
 
-  return `Number of categories: ${numbers}`;
-};
-
-console.log(sum());
-
+/*
+ *
+ *
+ */
 const title = document.querySelectorAll('.item h2');
 // console.log(title);
 
