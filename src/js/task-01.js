@@ -1,4 +1,4 @@
-console.log();
+console.log('Execise-01');
 
 const list = document.querySelector('ul#categories');
 // console.log(list);
