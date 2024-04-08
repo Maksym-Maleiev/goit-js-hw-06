@@ -34,8 +34,7 @@ const items = document.querySelectorAll('.item');
 const sum = () => {
   let numbers = 0;
 
-  items.forEach(item => {
-    console.log(item);
+  items.forEach(() => {
     numbers += 1;
   });
 
