@@ -6,6 +6,9 @@ const list = document.querySelector('ul#categories');
 const items = list.children;
 // console.log(items);
 
+/*
+ * First method
+ */
 // console.log(`Number of categories: ${items.length}`);
 
 const sum = items => {
