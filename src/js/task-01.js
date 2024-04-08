@@ -3,7 +3,7 @@ console.log('Execise-01');
 const list = document.querySelector('ul#categories');
 // console.log(list);
 
-const items = list.children;
+// const items = list.children;
 // console.log(items);
 
 /*
@@ -29,10 +29,13 @@ const items = list.children;
 /*
  * Third method
  */
+const items = document.querySelector('');
+
 const sum = items => {
   let numbers = 0;
 
   items.forEach(item => {
+    console.log(item);
     numbers += 1;
   });
 
