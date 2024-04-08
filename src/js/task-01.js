@@ -1,3 +1,5 @@
+console.log();
+
 const list = document.querySelector('ul#categories');
 // console.log(list);
 
