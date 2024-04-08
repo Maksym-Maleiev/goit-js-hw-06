@@ -8,6 +8,8 @@ const items = list.children;
 
 // console.log(`Number of categories: ${items.length}`);
 
+const sum = () => {};
+
 for (let i = 0; i < items.length; i += 1) {
   const element = items[i];
 }
