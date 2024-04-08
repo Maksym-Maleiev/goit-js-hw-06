@@ -29,9 +29,9 @@ const list = document.querySelector('ul#categories');
 /*
  * Third method
  */
-const items = document.querySelectorAll('');
+const items = document.querySelectorAll('.item');
 
-const sum = items => {
+const sum = () => {
   let numbers = 0;
 
   items.forEach(item => {
@@ -42,7 +42,7 @@ const sum = items => {
   return `Number of categories: ${numbers}`;
 };
 
-console.log(sum(list.children));
+console.log(sum());
 
 const title = document.querySelectorAll('.item h2');
 // console.log(title);
