@@ -8,11 +8,17 @@ const items = list.children;
 
 // console.log(`Number of categories: ${items.length}`);
 
-const sum = () => {};
+const sum = items => {
+  let numbers = 0;
 
-for (let i = 0; i < items.length; i += 1) {
-  const element = items[i];
-}
+  for (let i = 0; i < items.length; i += 1) {
+    numbers += 1;
+  }
+
+  return numbers;
+};
+
+console.log(sum(list.children));
 
 const title = document.querySelectorAll('.item h2');
 // console.log(title);
