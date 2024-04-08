@@ -11,6 +11,9 @@ const items = list.children;
  */
 // console.log(`Number of categories: ${items.length}`);
 
+/*
+ * Second method
+ */
 const sum = items => {
   let numbers = 0;
 
