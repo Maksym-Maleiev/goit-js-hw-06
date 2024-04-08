@@ -29,7 +29,7 @@ const list = document.querySelector('ul#categories');
 /*
  * Third method
  */
-const items = document.querySelector('');
+const items = document.querySelectorAll('');
 
 const sum = items => {
   let numbers = 0;
