@@ -1,19 +1,5 @@
 console.log('Execise-01');
 
-// const list = document.querySelector('ul#categories');
-// console.log(list);
-
-// const items = list.children;
-// console.log(items);
-
-/*
- * First method
- */
-// console.log(`Number of categories: ${items.length}`);
-
-/*
- * Second method
- */
 // const sum = items => {
 //   let numbers = 0;
 
@@ -38,19 +24,18 @@ console.log('Execise-01');
 
 // console.log(`Number of categories: ${numbers}`);
 
-const countItems = () => {
+const countCategory = () => {
   const itemEl = document.querySelectorAll('.item');
-  console.log(itemEl);
+  let numbers = 0;
 
-  listEl.forEach(() => {
-    let count = 0;
-    count += 1;
+  itemEl.forEach(() => {
+    numbers += 1;
   });
 
-  return `Number of categories: ${count}`;
+  return `Number of categories: ${numbers}`;
 };
 
-countItems();
+console.log(countCategory());
 
 /*
  *
