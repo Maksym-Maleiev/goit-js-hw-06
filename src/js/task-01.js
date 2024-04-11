@@ -46,6 +46,8 @@ const sumItems = items => {
   });
 };
 
+console.log(sumItems(items));
+
 /*
  *
  *
