@@ -38,16 +38,10 @@ console.log('Execise-01');
 const categoryRef = document.querySelectorAll('.item');
 console.log(`Number of categories: ${categoryRef.length}`);
 
-const countItemsOfCategory = () => {
-  const titleRef = document.querySelectorAll('h2');
-  const itemRef = document.querySelectorAll('li');
-  console.log(titleRef);
-  console.log(itemRef);
+categoryRef.forEach(item => {
+  const titleRef = item.querySelectorAll('h2');
+  const itemRef = item.querySelectorAll('li');
 
-  titleRef.forEach(item => {
-    console.log(`Category: ${item.textContent}`);
-    console.log(`Elements: ${itemRef.length}`);
-  });
-};
-
-countItemsOfCategory();
+  console.log(`Category: ${titleRef.textContent}`);
+  console.log(`Elements: ${itemRef.length}`);
+});
