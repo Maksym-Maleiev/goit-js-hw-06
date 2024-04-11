@@ -8,3 +8,7 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const itemRef = document.createElement('li');
+itemRef.textContent = ingredients;
+itemRef.classList.add('item');
