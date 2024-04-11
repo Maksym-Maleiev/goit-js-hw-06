@@ -21,12 +21,12 @@ console.log(countCategory());
  * Second exercise
  */
 
-const countNumbersOfCategory = () => {
+const countNumbersOfItems = () => {
   const itemEl = document.querySelectorAll('.item');
   const titleEl = document.querySelector('h2');
   let numbers = 0;
 
-  titleEl.forEach(item => {
+  itemEl.forEach(item => {
     numbers += 1;
     console.log(`Category: ${item.textContent}`);
   });
@@ -34,4 +34,4 @@ const countNumbersOfCategory = () => {
   return `Elements: ${numbers}`;
 };
 
-console.log(countNumbersOfCategory());
+console.log(countNumbersOfItems());
