@@ -22,16 +22,16 @@ console.log(countCategory());
  */
 
 const countNumbersOfCategory = () => {
-  const titleEl = document.querySelectorAll('.item h2');
-  const itemEl = document.querySelectorAll('ul li');
+  const itemEl = document.querySelectorAll('.item');
+
   let numbers = 0;
-  console.log(itemEl);
+  console.log(listEl);
 
   titleEl.forEach(item => {
     console.log(`Category: ${item.textContent}`);
   });
 
-  itemEl.forEach(() => {
+  listEl.forEach(() => {
     numbers += 1;
     console.log(`Elements: ${numbers}`);
   });
