@@ -30,6 +30,7 @@ console.log('Execise-01');
  * Third method
  */
 const items = document.querySelectorAll('.item');
+const list = document.querySelector('ul#categories');
 // let numbers = 0;
 
 // items.forEach(() => {
