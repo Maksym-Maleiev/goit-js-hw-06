@@ -46,7 +46,7 @@ const countItemsOfCategory = () => {
 
   titleRef.forEach(item => {
     console.log(`Category: ${item.textContent}`);
-    console.log(`Elements: $ itemRef.length}`);
+    console.log(`Elements: ${itemRef.length}`);
   });
 };
 
