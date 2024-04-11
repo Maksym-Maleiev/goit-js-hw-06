@@ -17,9 +17,13 @@ const countCategory = () => {
 
 console.log(countCategory());
 
-const title = document.querySelectorAll('.item h2');
+/*
+ * Second exercise
+ */
+
+// const title = document.querySelectorAll('.item h2');
 // console.log(title);
 
-title.forEach(el => {
-  console.log(`Category: ${el.textContent}`);
-});
+// title.forEach(el => {
+//   console.log(`Category: ${el.textContent}`);
+// });
