@@ -23,13 +23,12 @@ console.log(countCategory());
 
 const countNumbersOfItems = () => {
   const itemEl = document.querySelectorAll('.item li');
-  console.log(itemEl);
   const titleEl = document.querySelectorAll('h2');
   let numbers = 0;
 
-  itemEl.forEach(item => {
-    numbers += 1;
+  titleEl.forEach(item => {
     console.log(`Category: ${item.textContent}`);
+    numbers += 1;
     console.log(`Elements: ${numbers}`);
   });
 };
