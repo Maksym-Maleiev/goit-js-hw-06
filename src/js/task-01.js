@@ -23,18 +23,15 @@ console.log(countCategory());
 
 const countNumbersOfCategory = () => {
   const itemEl = document.querySelectorAll('.item');
-
+  const titleEl = document.querySelector('h2');
   let numbers = 0;
-  console.log(listEl);
 
   titleEl.forEach(item => {
+    numbers += 1;
     console.log(`Category: ${item.textContent}`);
   });
 
-  listEl.forEach(() => {
-    numbers += 1;
-    console.log(`Elements: ${numbers}`);
-  });
+  return `Elements: ${numbers}`;
 };
 
 console.log(countNumbersOfCategory());
