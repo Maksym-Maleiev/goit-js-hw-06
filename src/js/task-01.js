@@ -28,4 +28,9 @@ console.log(countCategory());
 //   console.log(`Category: ${el.textContent}`);
 // });
 
-const countNumbersOfCategory = () => {};
+const countNumbersOfCategory = () => {
+  const titleEl = document.querySelectorAll('.item h2');
+  console.log(titleEl);
+};
+
+console.log(countNumbersOfCategory());
