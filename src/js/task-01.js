@@ -21,16 +21,20 @@ console.log(countCategory());
  * Second exercise
  */
 
-// const title = document.querySelectorAll('.item h2');
-// console.log(title);
-
-// title.forEach(el => {
-//   console.log(`Category: ${el.textContent}`);
-// });
-
 const countNumbersOfCategory = () => {
   const titleEl = document.querySelectorAll('.item h2');
-  console.log(titleEl);
+  const itemEl = document.querySelectorAll('ul li');
+  let numbers = 0;
+  console.log(itemEl);
+
+  titleEl.forEach(item => {
+    console.log(`Category: ${item.textContent}`);
+  });
+
+  itemEl.forEach(() => {
+    numbers += 1;
+    console.log(`Elements: ${numbers}`);
+  });
 };
 
 console.log(countNumbersOfCategory());
