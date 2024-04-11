@@ -29,8 +29,7 @@ console.log('Execise-01');
 /*
  * Third method
  */
-const items = document.querySelectorAll('.item');
-const list = document.querySelector('ul#categories');
+// const items = document.querySelectorAll('.item');
 // let numbers = 0;
 
 // items.forEach(() => {
@@ -38,6 +37,8 @@ const list = document.querySelector('ul#categories');
 // });
 
 // console.log(`Number of categories: ${numbers}`);
+
+const list = document.querySelector('ul#categories');
 
 const sumItems = items => {
   let numbers = 0;
