@@ -38,7 +38,13 @@ const items = document.querySelectorAll('.item');
 
 // console.log(`Number of categories: ${numbers}`);
 
-const sumItems = items => {};
+const sumItems = items => {
+  let numbers = 0;
+
+  items.forEach(() => {
+    numbers += 1;
+  });
+};
 
 /*
  *
