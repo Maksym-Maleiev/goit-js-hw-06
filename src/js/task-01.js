@@ -1,36 +1,36 @@
 console.log('Execise-01');
 
-/*
- * First exercise
- */
+// /*
+//  * First exercise
+//  */
 
-const countCategory = () => {
-  const itemEl = document.querySelectorAll('.item');
-  let numbers = 0;
+// const countCategory = () => {
+//   const itemEl = document.querySelectorAll('.item');
+//   let numbers = 0;
 
-  itemEl.forEach(() => {
-    numbers += 1;
-  });
+//   itemEl.forEach(() => {
+//     numbers += 1;
+//   });
 
-  return `Number of categories: ${numbers}`;
-};
+//   return `Number of categories: ${numbers}`;
+// };
 
-console.log(countCategory());
+// console.log(countCategory());
 
-/*
- * Second exercise
- */
+// /*
+//  * Second exercise
+//  */
 
-const countNumbersOfItems = () => {
-  const itemEl = document.querySelectorAll('.item li');
-  const titleEl = document.querySelectorAll('h2');
-  let numbers = 0;
+// const countNumbersOfItems = () => {
+//   const itemEl = document.querySelectorAll('.item li');
+//   const titleEl = document.querySelectorAll('h2');
+//   let numbers = 0;
 
-  titleEl.forEach(item => {
-    console.log(`Category: ${item.textContent}`);
-    numbers += 1;
-    console.log(`Elements: ${numbers}`);
-  });
-};
+//   titleEl.forEach(item => {
+//     console.log(`Category: ${item.textContent}`);
+//     numbers += 1;
+//     console.log(`Elements: ${numbers}`);
+//   });
+// };
 
-console.log(countNumbersOfItems());
+// console.log(countNumbersOfItems());
