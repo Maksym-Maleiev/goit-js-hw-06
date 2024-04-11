@@ -35,7 +35,7 @@ console.log('Execise-01');
 
 // console.log(countNumbersOfItems());
 
-const itemEl = document.querySelectorAll('.item');
-console.log(`Number of categories: ${itemEl.length}`);
+const itemRef = document.querySelectorAll('.item');
+console.log(`Number of categories: ${itemRef.length}`);
 
 const countItemsOfCategory = () => {};
