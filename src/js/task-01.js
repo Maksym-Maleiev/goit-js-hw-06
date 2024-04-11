@@ -1,5 +1,9 @@
 console.log('Execise-01');
 
+/*
+ * First exercise
+ */
+
 const countCategory = () => {
   const itemEl = document.querySelectorAll('.item');
   let numbers = 0;
@@ -13,10 +17,6 @@ const countCategory = () => {
 
 console.log(countCategory());
 
-/*
- *
- *
- */
 const title = document.querySelectorAll('.item h2');
 // console.log(title);
 
