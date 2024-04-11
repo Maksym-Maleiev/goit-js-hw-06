@@ -40,6 +40,10 @@ console.log('Execise-01');
 
 const listEl = document.querySelector('ul#categories');
 
+const countItems = () => {
+  const itemEl = listEl.children;
+};
+
 /*
  *
  *
