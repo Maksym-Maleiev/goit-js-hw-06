@@ -9,6 +9,9 @@ const ingredients = [
   'Condiments',
 ];
 
+const listRef = document.querySelector('ul#ingredients');
 const itemRef = document.createElement('li');
 itemRef.textContent = ingredients;
 itemRef.classList.add('item');
+listRef.append(itemRef);
+console.log(listRef);
