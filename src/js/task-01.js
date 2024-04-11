@@ -30,13 +30,13 @@ console.log('Execise-01');
  * Third method
  */
 const items = document.querySelectorAll('.item');
-let numbers = 0;
+// let numbers = 0;
 
-items.forEach(() => {
-  numbers += 1;
-});
+// items.forEach(() => {
+//   numbers += 1;
+// });
 
-console.log(`Number of categories: ${numbers}`);
+// console.log(`Number of categories: ${numbers}`);
 
 /*
  *
