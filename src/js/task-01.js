@@ -27,3 +27,5 @@ console.log(countCategory());
 // title.forEach(el => {
 //   console.log(`Category: ${el.textContent}`);
 // });
+
+const countNumbersOfCategory = () => {};
