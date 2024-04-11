@@ -40,12 +40,13 @@ console.log(`Number of categories: ${itemRef.length}`);
 
 const countItemsOfCategory = () => {
   const titleRef = document.querySelectorAll('h2');
-  const itemRef = document.querySelectorAll('.item ul');
+  const itemRef = document.querySelectorAll('li');
   console.log(titleRef);
   console.log(itemRef);
 
   titleRef.forEach(item => {
     console.log(`Category: ${item.textContent}`);
+    console.log(`Elements: ${itemRef.length}`);
   });
 };
 
