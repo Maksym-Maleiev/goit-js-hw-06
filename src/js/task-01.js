@@ -39,6 +39,10 @@ console.log('Execise-01');
 // console.log(`Number of categories: ${numbers}`);
 
 const list = document.querySelector('ul#categories');
+console.log(list);
+
+const items = list.children;
+console.log(items);
 
 const sumItems = items => {
   let numbers = 0;
@@ -46,6 +50,8 @@ const sumItems = items => {
   items.forEach(() => {
     numbers += 1;
   });
+
+  return `Number of categories: ${numbers}`;
 };
 
 console.log(sumItems(items));
