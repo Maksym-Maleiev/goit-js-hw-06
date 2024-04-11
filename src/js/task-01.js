@@ -39,10 +39,21 @@ console.log('Execise-01');
 // console.log(`Number of categories: ${numbers}`);
 
 const listEl = document.querySelector('ul#categories');
+console.log(listEl);
 
 const countItems = () => {
   const itemEl = listEl.children;
+  console.log(itemEl);
+
+  listEl.forEach(() => {
+    let count = 0;
+    count += 1;
+  });
+
+  return `Number of categories: ${count}`;
 };
+
+countItems();
 
 /*
  *
