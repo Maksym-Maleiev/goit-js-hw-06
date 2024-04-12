@@ -19,7 +19,7 @@ const listRef = document.querySelector('.gallery');
 const markup = images.map(img => {
   const itemRef = document.createElement('li');
   const imgRef = document.createElement('img');
-  imgRef.setAttribute('url', img.url);
+  imgRef.setAttribute('src', img.url);
   imgRef.setAttribute('alt', img.alt);
   itemRef.append(imgRef);
 
