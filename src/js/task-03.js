@@ -16,7 +16,9 @@ const images = [
 ];
 
 const listRef = document.querySelector('.gallery');
-const itemsRef = images.map(img => {});
+const markup = images.map(img => {
+  const itemRef = document.createElement('li');
+});
 
 // listRef.insertAdjacentHTML('afterbegin', itemsRef);
 
