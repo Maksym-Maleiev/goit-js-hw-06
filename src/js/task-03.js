@@ -15,21 +15,26 @@ const images = [
   },
 ];
 
-const listRef = document.querySelector('.gallery');
-const markup = images.map(img => {
-  const itemRef = document.createElement('li');
-  const imgRef = document.createElement('img');
-  imgRef.setAttribute('src', img.url);
-  imgRef.setAttribute('alt', img.alt);
-  itemRef.append(imgRef);
+// const listRef = document.querySelector('.gallery');
+// const markup = images.map(img => {
+//   const itemRef = document.createElement('li');
+//   const imgRef = document.createElement('img');
+//   imgRef.setAttribute('src', img.url);
+//   imgRef.setAttribute('alt', img.alt);
+//   itemRef.append(imgRef);
 
-  return itemRef;
-});
+//   return itemRef;
+// });
 
-listRef.append(...markup);
-
-document.body.appendChild(listRef);
-
-// listRef.insertAdjacentHTML('afterbegin', itemsRef);
+// listRef.append(...markup);
 
 // document.body.appendChild(listRef);
+
+const listRef = document.querySelector('.gallery');
+const markup = images
+  .map(el => `<li><img src = ${el.url} alt = ${el.alt}></li>`)
+  .join('');
+
+listRef.insertAdjacentHTML('afterbegin', markup);
+
+document.body.appendChild(listRef);
