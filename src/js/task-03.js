@@ -19,6 +19,12 @@ const listRef = document.querySelector('.gallery');
 const markup = images.map(img => {
   const itemRef = document.createElement('li');
   const imgRef = document.createElement('img');
+  const urlTextContent = img.url.textContent;
+  imgRef.setAttribute('url', urlTextContent);
+  const altTextContent = img.alt.textContent;
+  imgRef.setAttribute('alt', altTextContent);
+
+  return itemRef;
 });
 
 // listRef.insertAdjacentHTML('afterbegin', itemsRef);
