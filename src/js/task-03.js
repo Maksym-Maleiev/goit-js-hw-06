@@ -19,13 +19,19 @@ const listRef = document.querySelector('.gallery');
 const markup = images.map(img => {
   const itemRef = document.createElement('li');
   const imgRef = document.createElement('img');
-  const urlTextContent = img.url.textContent;
+  const urlTextContent = img.url;
   imgRef.setAttribute('url', urlTextContent);
-  const altTextContent = img.alt.textContent;
+  const altTextContent = img.alt;
   imgRef.setAttribute('alt', altTextContent);
+
+  itemRef.append(imgRef);
 
   return itemRef;
 });
+
+listRef.append(...markup);
+
+document.body.appendChild(listRef);
 
 // listRef.insertAdjacentHTML('afterbegin', itemsRef);
 
