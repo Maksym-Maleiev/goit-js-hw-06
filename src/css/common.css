@@ -24,10 +24,14 @@ button {
 }
 
 .gallery {
-  list-style: none;
+  width: 480px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  list-style: none;
+}
+
+.gallery > li {
 }
 
 img {
