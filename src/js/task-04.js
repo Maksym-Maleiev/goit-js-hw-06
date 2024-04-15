@@ -11,6 +11,9 @@ console.log(counterRef);
 
 let counterValue = 0;
 
-minusBtnRef.addEventListener('click', () => {});
+minusBtnRef.addEventListener('click', () => {
+  counterValue -= 1;
+  counterRef.innerHTML = counterValue;
+});
 
 plusBtnRef.addEventListener('click', () => {});
