@@ -1,14 +1,14 @@
 console.log('Exercise_04');
 
-const btnDecrement = document.querySelector('button[data-action="decrement"]');
-console.log(btnDecrement);
+const minusBtnRef = document.querySelector('button[data-action="decrement"]');
+console.log(minusBtnRef);
 
-btnDecrement.addEventListener('click', () => {});
+minusBtnRef.addEventListener('click', () => {});
 
-const btnIncrement = document.querySelector('button[data-action="increment"]');
-console.log(btnIncrement);
+const plusBtnRef = document.querySelector('button[data-action="increment"]');
+console.log(plusBtnRef);
 
-btnIncrement.addEventListener('click', () => {});
+plusBtnRef.addEventListener('click', () => {});
 
-const counterValue = document.getElementById('value');
-console.log(counterValue);
+const counterRef = document.getElementById('value');
+console.log(counterRef);
