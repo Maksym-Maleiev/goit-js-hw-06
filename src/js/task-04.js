@@ -10,5 +10,5 @@ console.log(btnIncrement);
 
 btnIncrement.addEventListener('click', () => {});
 
-const counterValue = document.querySelector('span#value');
+const counterValue = document.getElementById('value');
 console.log(counterValue);
