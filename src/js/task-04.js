@@ -7,3 +7,4 @@ const btnIncrement = document.querySelector('button[data-action="increment"]');
 console.log(btnIncrement);
 
 const counterValue = document.querySelector('span#value');
+console.log(counterValue);
