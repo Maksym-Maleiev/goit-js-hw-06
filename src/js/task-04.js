@@ -9,6 +9,8 @@ console.log(plusBtnRef);
 const counterRef = document.getElementById('value');
 console.log(counterRef);
 
+let counterValue = 0;
+
 minusBtnRef.addEventListener('click', () => {});
 
 plusBtnRef.addEventListener('click', () => {});
