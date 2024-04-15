@@ -13,7 +13,7 @@ let counterValue = 0;
 
 minusBtnRef.addEventListener('click', () => {
   counterValue -= 1;
-  counterRef.innerHTML = counterValue;
+  counterRef.innerHTML = counterValu;
 });
 
 plusBtnRef.addEventListener('click', () => {
