@@ -11,6 +11,6 @@ function onInputChange(event) {
   if (event.currentTarget.value === '') {
     refs.nameOutput.textContent = 'Anonymous';
   } else {
-    refs.nameOutput.textContent = event.currentTarget.valu;
+    refs.nameOutput.textContent = event.currentTarget.value;
   }
 }
