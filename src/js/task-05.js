@@ -5,7 +5,7 @@ const refs = {
   nameOutput: document.querySelector('#name-output'),
 };
 
-refs.input.addEventListener();
+refs.input.addEventListener('input', onInputChange);
 refs.nameOutput.addEventListener();
 
 function onInputChange() {}
