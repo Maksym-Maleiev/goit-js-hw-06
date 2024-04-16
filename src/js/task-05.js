@@ -6,6 +6,11 @@ const refs = {
 };
 
 refs.input.addEventListener('input', onInputChange);
-refs.nameOutput.addEventListener();
 
-function onInputChange() {}
+function onInputChange(event) {
+  if (event.currentTarget.value === '') {
+    refs.nameOutput.textContent = 'Anonymous';
+  } else {
+    refs.nameOutput.textContent = event.currentTarget.value;
+  }
+}
