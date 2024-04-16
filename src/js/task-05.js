@@ -6,3 +6,4 @@ const refs = {
 };
 
 refs.input.addEventListener();
+refs.nameOutput.addEventListener();
