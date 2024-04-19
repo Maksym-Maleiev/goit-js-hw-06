@@ -4,7 +4,7 @@ const refs = {
   textInputRef: document.querySelector('#validation-input'),
 };
 
-const onChangeInput = e => {
+const onCheckInput = e => {
   if (e.currentTarget.value.length < 6) {
     refs.textInputRef.classList.add('invalid');
     refs.textInputRef.classList.remove('valid');
@@ -14,4 +14,4 @@ const onChangeInput = e => {
   }
 };
 
-refs.textInputRef.addEventListener('blur', onChangeInput);
+refs.textInputRef.addEventListener('blur', onCheckInput);
