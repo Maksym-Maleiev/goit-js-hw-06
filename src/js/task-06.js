@@ -1,9 +1,8 @@
 console.log('Exercise_6');
 
-const ref = {};
-
-const textInputRef = document.querySelector('#validation-input');
-// console.log(inputRef);
+const ref = {
+  textInputRef: document.querySelector('#validation-input'),
+};
 
 const onChangeInput = e => {};
 
