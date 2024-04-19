@@ -1,3 +1,3 @@
 console.log('Exercise_6');
 
-const inputRef = document.querySelector();
+const inputRef = document.querySelector('#validation-input');
