@@ -1,1 +1,1 @@
-console.log('Exercise_06');
+console.log('Exercise_6');
