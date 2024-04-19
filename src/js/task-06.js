@@ -5,4 +5,4 @@ const inputRef = document.querySelector('#validation-input');
 
 const onChangeInput = e => {};
 
-inputRef.addEventListener('input');
+inputRef.addEventListener('input', onChangeInput);
