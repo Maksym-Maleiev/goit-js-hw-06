@@ -5,8 +5,10 @@ const refs = {
 };
 
 const onChangeInput = e => {
-  if (e.currentTarget.lenght > 6) {
-    refs.textInputRef.classList.add('');
+  if (e.currentTarget.value.length < 6) {
+    refs.textInputRef.classList.toggle('invalid');
+  } else {
+    refs.textInputRef.classList.toggle('valid');
   }
 };
 
