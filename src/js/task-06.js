@@ -6,4 +6,4 @@ const refs = {
 
 const onChangeInput = e => {};
 
-refs.textInputRef.addEventListener('blur', onChangeInput);
+refs.textInputRef.addEventListener('input', onChangeInput);
