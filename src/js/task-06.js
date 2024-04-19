@@ -14,4 +14,4 @@ const onChangeInput = e => {
   }
 };
 
-refs.textInputRef.addEventListener('input', onChangeInpu);
+refs.textInputRef.addEventListener('input', onChangeInput);
