@@ -6,6 +6,7 @@ const refs = {
 
 const onChangeInput = e => {
   if (e.currentTarget.lenght > 6) {
+    refs.textInputRef.classList.add('');
   }
 };
 
