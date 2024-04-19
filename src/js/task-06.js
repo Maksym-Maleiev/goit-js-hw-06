@@ -6,9 +6,11 @@ const refs = {
 
 const onChangeInput = e => {
   if (e.currentTarget.value.length < 6) {
-    refs.textInputRef.classList.toggle('invalid');
+    refs.textInputRef.classList.add('invalid');
+    refs.textInputRef.classList.remove('valid');
   } else {
-    refs.textInputRef.classList.toggle('valid');
+    refs.textInputRef.classList.add('valid');
+    refs.textInputRef.classList.remove('invalid');
   }
 };
 
