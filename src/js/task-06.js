@@ -1,9 +1,9 @@
 console.log('Exercise_6');
 
-const ref = {
+const refs = {
   textInputRef: document.querySelector('#validation-input'),
 };
 
 const onChangeInput = e => {};
 
-textInputRef.addEventListener('blur', onChangeInput);
+refs.textInputRef.addEventListener('blur', onChangeInput);
