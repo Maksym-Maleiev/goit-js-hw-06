@@ -1,3 +1,5 @@
 console.log('Exercise_7');
 
-const refs = {};
+const refs = {
+  inputRef: document.querySelector(''),
+};
