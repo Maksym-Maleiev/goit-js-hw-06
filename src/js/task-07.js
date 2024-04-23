@@ -6,3 +6,5 @@ const refs = {
 };
 
 const onChangeFontSize = e => {};
+
+refs.inputRef.addEventListener();
