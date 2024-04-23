@@ -20,7 +20,7 @@ function onSubmit(e) {
   }
 
   console.log(`Login: ${user.login}, Password: ${user.password}`);
-  reset();
+  user.reset();
 }
 
 formRef.addEventListener('submit', onSubmit);
