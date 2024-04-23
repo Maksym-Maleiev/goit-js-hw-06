@@ -16,7 +16,7 @@ function onSubmit(e) {
   // const password = form.elements.password.value;
 
   if (form.login === '' || form.password === '') {
-    return console.log('Необхідно заповнити всі поля');
+    return alert('Необхідно заповнити всі поля!');
   }
 
   console.log(`Login: ${form.login}, Password: ${form.password}`);
