@@ -1,7 +1,6 @@
 console.log('Exercise_8');
 
 const formRef = document.querySelector('.login-form');
-// console.log(formRef);
 
 function onSubmit(e) {
   e.preventDefault();
@@ -11,16 +10,14 @@ function onSubmit(e) {
     password: e.target.elements.password.value,
   };
 
-  // const form = e.target;
-  // const login = form.elements.email.value;
-  // const password = form.elements.password.value;
+  const { login, password } = user;
 
-  if (user.login === '' || user.password === '') {
+  if (login === '' || password === '') {
     return alert('Необхідно заповнити всі поля!');
   }
 
-  console.log(`Login: ${user.login}, Password: ${user.password}`);
-  user.reset();
+  console.log(`Login: ${login}, Password: ${password}`);
+  e.target.reset();
 }
 
 formRef.addEventListener('submit', onSubmit);
