@@ -6,7 +6,7 @@ const refs = {
 };
 
 const onRangeChange = e => {
-  span.style.fontSize = `${e.target.value}px`;
+  refs.span.style.fontSize = `${e.target.value}px`;
 };
 
-range.addEventListener('input', onRangeChange);
+refs.range.addEventListener('input', onRangeChange);
