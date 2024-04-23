@@ -6,10 +6,8 @@ const refs = {
 };
 
 const onRangeChange = e => {
-  const { value } = e.target;
-
-  refs.inputRef.min = value;
-  refs.inputRef.max = value;
+  refs.inputRef.min = e.target;
+  refs.inputRef.max = e.target;
 };
 
 refs.inputRef.addEventListener('input', onRangeChange);
