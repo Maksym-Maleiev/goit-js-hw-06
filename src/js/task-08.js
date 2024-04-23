@@ -15,7 +15,7 @@ function onSubmit(e) {
   // const login = form.elements.email.value;
   // const password = form.elements.password.value;
 
-  if (login === '' || password === '') {
+  if (form.login === '' || form.password === '') {
     return console.log('Необхідно заповнити всі поля');
   }
 
