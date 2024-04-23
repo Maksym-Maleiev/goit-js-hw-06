@@ -1,3 +1,5 @@
 console.log('Exercise_8');
 
-const refs = {};
+const refs = {
+  form: document.querySelector('.login-form'),
+};
