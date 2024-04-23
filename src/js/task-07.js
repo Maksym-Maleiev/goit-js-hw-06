@@ -6,7 +6,9 @@ const refs = {
 };
 
 const onRangeChange = e => {
-  refs.inputRef.min = e.refs.spanRef.style.fontSize;
+  const { value } = refs.spanRef.style.fontSize;
+
+  refs.inputRef.min = e.value;
   refs.inputRef.max = e.refs.spanRef.style.fontSize;
 };
 
