@@ -9,6 +9,10 @@ function onSubmit(e) {
   const form = e.target;
   const login = form.elements.email.value;
   const password = form.elements.password.value;
+
+  if (login === '' || password === '') {
+    alert('');
+  }
 }
 
 formRef.addEventListener('submit', onSubmit);
