@@ -11,8 +11,10 @@ function onSubmit(e) {
   const password = form.elements.password.value;
 
   if (login === '' || password === '') {
-    alert('');
+    return console.log('Необхідно заповнити всі поля');
   }
+
+  // reset();
 }
 
 formRef.addEventListener('submit', onSubmit);
