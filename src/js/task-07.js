@@ -8,8 +8,8 @@ console.log(refs.inputRef);
 console.log(refs.spanRef);
 
 const onRangeChange = e => {
-  refs.spanRef.style.fontSize = e.currentTarget.value;
-  console.log(e.currentTarget.value);
+  refs.spanRef.style.fontSize = e.target.value;
+  console.log(e.target.value);
 };
 
 refs.inputRef.addEventListener('input', onRangeChange);
