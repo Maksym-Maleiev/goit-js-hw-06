@@ -1,14 +1,13 @@
 console.log('Exercise_7');
 
-const refs = {
-  inputRef: document.querySelector('#font-size-control'),
-  spanRef: document.querySelector('#text'),
-};
-console.log(refs.inputRef);
-console.log(refs.spanRef);
+const inputRef = document.querySelector('#font-size-control');
+const spanRef = document.querySelector('#text');
+
+console.log(inputRef);
+console.log(spanRef);
 
 const onRangeChange = e => {
-  refs.spanRef = e.target.value;
+  spanRef = e.target.value;
   console.log(e.target.value);
 };
 
