@@ -8,7 +8,7 @@ console.log(refs.inputRef);
 console.log(refs.spanRef);
 
 const onRangeChange = e => {
-  refs.spanRef.style.fontSize = e.target.value;
+  refs.spanRef.textContent = e.target.value;
   console.log(e.target.value);
 };
 
