@@ -19,7 +19,8 @@ function onSubmit(e) {
     return console.log('Необхідно заповнити всі поля');
   }
 
-  // reset();
+  console.log(`Login: ${form.login}, Password: ${form.password}`);
+  reset();
 }
 
 formRef.addEventListener('submit', onSubmit);
