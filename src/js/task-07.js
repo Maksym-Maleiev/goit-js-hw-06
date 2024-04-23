@@ -4,12 +4,11 @@ const refs = {
   inputRef: document.querySelector('#font-size-control'),
   spanRef: document.querySelector('#text'),
 };
+console.log(refs.spanRef);
 
 const onRangeChange = e => {
-  const { value } = e.target;
-
-  refs.inputRef.textContent = value;
-  refs.spanRef.style.fontSize = value;
+  refs.inputRef.textContent = e.currentTarget.value;
+  refs.spanRef.style.fontSize = e.currentTarget.value;
 };
 
 refs.inputRef.addEventListener('input', onRangeChange);
