@@ -4,7 +4,7 @@ const formRef = document.querySelector('.login-form');
 // console.log(formRef);
 
 function onSubmit(e) {
-  preventDefault();
+  e.preventDefault();
 
   const form = {
     login: e.target.elements.email.value,
