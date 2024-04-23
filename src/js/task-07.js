@@ -1,15 +1,12 @@
 console.log('Exercise_7');
 
-const refs = {};
-
-const inputRef = document.querySelector('input#font-size-control');
-const spanRef = document.querySelector('span#text');
-
-console.log(inputRef);
-console.log(spanRef);
-
-const onRangeChange = e => {
-  spanRef.style.fontSize = `${e.target.value}px`;
+const refs = {
+  range: document.querySelector('input#font-size-control'),
+  span: document.querySelector('span#text'),
 };
 
-inputRef.addEventListener('input', onRangeChange);
+const onRangeChange = e => {
+  span.style.fontSize = `${e.target.value}px`;
+};
+
+range.addEventListener('input', onRangeChange);
