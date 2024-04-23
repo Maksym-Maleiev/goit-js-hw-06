@@ -6,8 +6,8 @@ const refs = {
 };
 
 const onRangeChange = e => {
-  refs.inputRef.min = e.target;
-  refs.inputRef.max = e.target;
+  refs.inputRef.min = e.refs.spanRef.style.fontSize;
+  refs.inputRef.max = e.refs.spanRef.style.fontSize;
 };
 
 refs.inputRef.addEventListener('input', onRangeChange);
