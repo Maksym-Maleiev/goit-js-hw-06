@@ -6,7 +6,7 @@ const formRef = document.querySelector('.login-form');
 function onSubmit(e) {
   e.preventDefault();
 
-  const form = {
+  const user = {
     login: e.target.elements.email.value,
     password: e.target.elements.password.value,
   };
@@ -15,11 +15,11 @@ function onSubmit(e) {
   // const login = form.elements.email.value;
   // const password = form.elements.password.value;
 
-  if (form.login === '' || form.password === '') {
+  if (user.login === '' || user.password === '') {
     return alert('Необхідно заповнити всі поля!');
   }
 
-  console.log(`Login: ${form.login}, Password: ${form.password}`);
+  console.log(`Login: ${user.login}, Password: ${user.password}`);
   reset();
 }
 
