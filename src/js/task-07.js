@@ -5,11 +5,11 @@ const refs = {
   spanRef: document.querySelector('#text'),
 };
 
-const onChangeFontSize = e => {
+const onRangeChange = e => {
   const { value } = e.target;
 
-  refs.inputRef.min = `${value}px`;
-  refs.inputRef.max = `${value}px`;
+  refs.inputRef.min = value;
+  refs.inputRef.max = value;
 };
 
-refs.inputRef.addEventListener('input', onChangeFontSize);
+refs.inputRef.addEventListener('input', onRangeChange);
