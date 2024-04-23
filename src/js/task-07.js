@@ -1,5 +1,7 @@
 console.log('Exercise_7');
 
+const refs = {};
+
 const inputRef = document.querySelector('input#font-size-control');
 const spanRef = document.querySelector('span#text');
 
