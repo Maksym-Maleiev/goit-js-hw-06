@@ -12,7 +12,7 @@ const onCountChange = e => {
 
   const arr = Array(Number(value)).fill('').map();
 
-  refs.box.insertAdjacentHTML('afterbegin', arr);
+  refs.box.insertAdjacentHTML('afterbegin', arr.join(''));
 };
 
 function getRandomHexColor() {
