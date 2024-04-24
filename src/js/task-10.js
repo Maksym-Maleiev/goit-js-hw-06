@@ -1,7 +1,7 @@
 console.log('Exercise_10');
 
 const refs = {
-  box: document.querySelector('.box'),
+  control: document.querySelector('#controls input'),
   creatBtn: document.querySelector('button[data-create]'),
   removeBtn: document.querySelector('button[data-destroy]'),
 };
