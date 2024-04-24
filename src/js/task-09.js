@@ -11,7 +11,7 @@ function getRandomHexColor() {
 }
 
 const onChangeBgColor = e => {
-  document.body.classList.add('.bg-color');
+  document.body.className;
 };
 
 refs.btn.addEventListener('click', onChangeBgColor);
