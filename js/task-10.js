@@ -7,13 +7,16 @@ const refs = {
   box: document.querySelector('#boxes'),
 };
 
+let inputValue = 0;
+
 const onCountClick = e => {
-  const { value } = e.target;
+  inputValue = e.target.value;
 };
 
+let width = 30;
+let height = 30;
+
 const createBoxes = () => {
-  let width = 30;
-  let height = 30;
   const { value } = refs.control;
 
   Array(Number(value))
