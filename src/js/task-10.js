@@ -7,22 +7,22 @@ const refs = {
   box: document.querySelector('#boxes'),
 };
 
+const onCountChange = e => {
+  const { value } = e.target;
+  const arr = Array(Number(value))
+    .fill('')
+    .map(() => `<div></div>`);
+  refs.box.insertAdjacentHTML('beforeend', arr.join(''));
+};
+
 const onCreatBox = e => {};
 
 const onDeleteBox = e => {};
-
-// const onCountChange = e => {
-//   const { value } = e.target;
-//   const arr = Array(Number(value))
-//     .fill('')
-//     .map(() => `<div></div>`);
-//   refs.box.insertAdjacentHTML('beforeend', arr.join(''));
-// };
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
+refs.control.addEventListener('input', onCountChange);
 refs.creatBtn.addEventListener('click', onCreatBox);
 refs.removeBtn.addEventListener('click', onDeleteBox);
-// refs.control.addEventListener('input', onCountChange);
