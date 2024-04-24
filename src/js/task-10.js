@@ -9,7 +9,7 @@ const refs = {
 const onCountChange = e => {
   const { value } = e.target;
 
-  const arr = Array(Number(value)).fill('');
+  const arr = Array(Number(value)).fill('').map();
 };
 
 function getRandomHexColor() {
