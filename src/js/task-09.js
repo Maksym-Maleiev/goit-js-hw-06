@@ -11,7 +11,7 @@ function getRandomHexColor() {
 }
 
 const onChangeBgColor = e => {
-  refs.text.innerHTML(getRandomHexColor);
+  refs.text.innerHTML = getRandomHexColor();
   // document.body.style.backgroundColor = e.target;
 };
 
