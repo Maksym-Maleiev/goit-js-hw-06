@@ -10,7 +10,9 @@ const refs = {
 const onCountChange = e => {
   const { value } = e.target;
 
-  const arr = Array(Number(value)).fill('').map();
+  const arr = Array(Number(value))
+    .fill('')
+    .map(() => `<div></div>`);
 
   refs.box.insertAdjacentHTML('afterbegin', arr.join(''));
 };
