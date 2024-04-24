@@ -8,6 +8,8 @@ const refs = {
 
 const onCountChange = e => {
   const { value } = e.target;
+
+  const arr = Array(Number(value)).map();
 };
 
 function getRandomHexColor() {
