@@ -31,7 +31,7 @@ const createBoxes = () => {
 
 const destroyBoxes = () => {
   refs.control.value = '';
-  refs.box.value = '';
+  refs.box.innerHTML = '';
   width = 30;
   height = 30;
 };
