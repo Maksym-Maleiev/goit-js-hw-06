@@ -7,14 +7,13 @@ const refs = {
   box: document.querySelector('#boxes'),
 };
 
-const onCountChange = e => {
-  e.stopPropagation();
+function createBoxes(amount) {}
 
+const onCountChange = e => {
   // const { value } = e.target;
   // const arr = Array(Number(value))
   //   .fill('')
   //   .map(() => `<div class = 'item'></div>`);
-
   // refs.box.insertAdjacentHTML('beforeend', arr.join(''));
 };
 
@@ -23,5 +22,3 @@ function getRandomHexColor() {
 }
 
 refs.control.addEventListener('input', onCountChange);
-refs.creatBtn.addEventListener('click', onCreatBox);
-refs.removeBtn.addEventListener('click', onDeleteBox);
