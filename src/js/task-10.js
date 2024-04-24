@@ -1,11 +1,19 @@
 console.log('Exercise_10');
 
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+
 const refs = {
   control: document.querySelector('#controls input'),
   creatBtn: document.querySelector('button[data-create]'),
   removeBtn: document.querySelector('button[data-destroy]'),
   box: document.querySelector('#boxes'),
 };
+
+refs.control.addEventListener('input', onCountClick);
+refs.creatBtn.addEventListener('click', createBoxes);
+refs.removeBtn.addEventListener('click', destroyBoxes);
 
 let inputValue = 0;
 
@@ -33,14 +41,6 @@ const destroyBoxes = () => {
   refs.control.value = '';
   refs.box.value = '';
 };
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
-
-refs.control.addEventListener('input', onCountClick);
-refs.creatBtn.addEventListener('click', createBoxes);
-refs.removeBtn.addEventListener('click', destroyBoxes);
 
 // const { value } = e.target;
 // console.log(value);
