@@ -6,10 +6,12 @@ const refs = {
   removeBtn: document.querySelector('button[data-destroy]'),
 };
 
-const onCreatBox = e => {};
+const onCountChange = e => {
+  e.target;
+};
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-refs.control.addEventListener('input', onCreatBox);
+refs.control.addEventListener('input', onCountChange);
