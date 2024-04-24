@@ -16,7 +16,18 @@ const onCountClick = e => {
 let width = 30;
 let height = 30;
 
-const createBoxes = e => {};
+const createBoxes = e => {
+  const { value } = e.target;
+
+  const arr = Array(Number(value))
+    .fill('')
+    .map(
+      () =>
+        `<div class = 'item' style = 'width': ${width}px; 'height': ${height}px></div>`
+    );
+
+  refs.box.insertAdjacentHTML('beforeend', arr.join(''));
+};
 
 const destroyBoxes = e => {};
 
