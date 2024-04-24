@@ -10,9 +10,9 @@ const refs = {
 const onCountChange = e => {
   const { value } = e.target;
 
-  const arr = Array(Number(value))
-    .fill('')
-    .map(() => refs.box.insertAdjacentHTML());
+  const arr = Array(Number(value)).fill('').map();
+
+  refs.box.insertAdjacentHTML('afterbegin', arr);
 };
 
 function getRandomHexColor() {
