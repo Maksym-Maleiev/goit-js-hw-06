@@ -8,7 +8,7 @@ const refs = {
 };
 
 const onCountClick = e => {
-  const { value } = e.target;
+  e.target.value;
 };
 
 const createBoxes = () => {
