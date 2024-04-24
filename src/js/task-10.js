@@ -14,7 +14,7 @@ const onCountChange = e => {
     .fill('')
     .map(() => `<div></div>`);
 
-  refs.box.insertAdjacentHTML('afterbegin', arr.join(''));
+  refs.box.insertAdjacentHTML('beforeend', arr.join(''));
 };
 
 function getRandomHexColor() {
