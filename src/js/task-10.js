@@ -11,7 +11,8 @@ const onCountChange = e => {
   const { value } = e.target;
   const arr = Array(Number(value))
     .fill('')
-    .map(() => `<div></div>`);
+    .map(() => `<div class = 'item'></div>`);
+
   refs.box.insertAdjacentHTML('beforeend', arr.join(''));
 };
 
