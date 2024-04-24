@@ -1,19 +1,11 @@
 console.log('Exercise_10');
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
-
 const refs = {
   control: document.querySelector('#controls input'),
   creatBtn: document.querySelector('button[data-create]'),
   removeBtn: document.querySelector('button[data-destroy]'),
   box: document.querySelector('#boxes'),
 };
-
-refs.control.addEventListener('input', onCountClick);
-refs.creatBtn.addEventListener('click', createBoxes);
-refs.removeBtn.addEventListener('click', destroyBoxes);
 
 let inputValue = 0;
 
@@ -24,29 +16,30 @@ const onCountClick = e => {
 let width = 30;
 let height = 30;
 
-const createBoxes = e => {
-  const { value } = e.target;
-
-  const arr = Array(Number(value))
-    .fill('')
-    .map(
-      () =>
-        `<div style ="width": ${width}px; "height": ${height}px; "background-color": ${getRandomHexColor()}></div>`
+const createBoxes = () => {
+  for (let i = 0; i < refs.control.value; i += 1) {
+    refs.box.insertAdjacentHTML(
+      'beforeend',
+      `<div style="width: ${width}px; height: ${height}px;
+   background-color: ${getRandomHexColor()};"></div >`
     );
 
-  refs.box.insertAdjacentHTML('beforeend', arr.join(''));
+    width += 10;
+    height += 10;
+  }
 };
 
 const destroyBoxes = () => {
   refs.control.value = '';
   refs.box.value = '';
+  width = 30;
+  height = 30;
 };
 
-// const { value } = e.target;
-// console.log(value);
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
 
-// const arr = Array(Number(value))
-//   .fill('')
-//   .map(() => `<div class = 'item'></div>`);
-
-// refs.box.insertAdjacentHTML('beforeend', arr.join(''));
+refs.control.addEventListener('input', onCountClick);
+refs.creatBtn.addEventListener('click', createBoxes);
+refs.removeBtn.addEventListener('click', destroyBoxes);
