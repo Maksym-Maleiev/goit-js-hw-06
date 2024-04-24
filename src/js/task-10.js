@@ -29,7 +29,10 @@ const createBoxes = e => {
   refs.box.insertAdjacentHTML('beforeend', arr.join(''));
 };
 
-const destroyBoxes = e => {};
+const destroyBoxes = () => {
+  refs.control.value = '';
+  refs.box.value = '';
+};
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
