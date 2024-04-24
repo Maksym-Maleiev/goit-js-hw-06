@@ -4,6 +4,7 @@ const refs = {
   control: document.querySelector('#controls input'),
   creatBtn: document.querySelector('button[data-create]'),
   removeBtn: document.querySelector('button[data-destroy]'),
+  box: document.querySelector('#boxes'),
 };
 
 const onCountChange = e => {
