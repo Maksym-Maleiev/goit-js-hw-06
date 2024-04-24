@@ -7,16 +7,9 @@ const refs = {
   box: document.querySelector('#boxes'),
 };
 
-const onCountClick = e => {
-  const { value } = e.target;
-  console.log(value);
+let value = 0;
 
-  const arr = Array(Number(value))
-    .fill('')
-    .map(() => `<div class = 'item'></div>`);
-
-  refs.box.insertAdjacentHTML('beforeend', arr.join(''));
-};
+const onCountClick = e => {};
 
 const createBoxes = e => {};
 
@@ -29,3 +22,12 @@ function getRandomHexColor() {
 refs.control.addEventListener('input', onCountClick);
 refs.creatBtn.addEventListener('click', createBoxes);
 refs.removeBtn.addEventListener('click', destroyBoxes);
+
+// const { value } = e.target;
+// console.log(value);
+
+// const arr = Array(Number(value))
+//   .fill('')
+//   .map(() => `<div class = 'item'></div>`);
+
+// refs.box.insertAdjacentHTML('beforeend', arr.join(''));
