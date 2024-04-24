@@ -23,7 +23,7 @@ const createBoxes = e => {
     .fill('')
     .map(
       () =>
-        `<div style = 'width': ${width}px; 'height': ${height}px; 'background-color': ${getRandomHexColor}></div>`
+        `<div style ="width": ${width}px; "height": ${height}px; "background-color": ${getRandomHexColor()}></div>`
     );
 
   refs.box.insertAdjacentHTML('beforeend', arr.join(''));
