@@ -2,6 +2,7 @@ console.log('Exercise_9');
 
 const refs = {
   box: document.querySelector('.widget'),
+  text: document.querySelector('.color'),
 };
 
 function getRandomHexColor() {
