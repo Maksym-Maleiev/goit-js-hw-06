@@ -10,9 +10,9 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-const onChangeBgColor = e => {
+const onChangeBgColor = () => {
   refs.text.innerHTML = getRandomHexColor();
-  // document.body.style.backgroundColor = e.target;
+  document.body.style.backgroundColor = getRandomHexColor();
 };
 
 refs.btn.addEventListener('click', onChangeBgColor);
