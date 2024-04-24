@@ -7,26 +7,27 @@ const refs = {
   box: document.querySelector('#boxes'),
 };
 
-let inputValue = 0;
-
 const onCountClick = e => {
-  inputValue = e.target.value;
+  const { value } = e.target;
 };
 
-let width = 30;
-let height = 30;
-
 const createBoxes = () => {
-  for (let i = 0; i < refs.control.value; i += 1) {
-    refs.box.insertAdjacentHTML(
-      'beforeend',
-      `<div style="width: ${width}px; height: ${height}px;
-   background-color: ${getRandomHexColor()};"></div >`
-    );
+  let width = 30;
+  let height = 30;
+  const { value } = refs.control;
 
-    width += 10;
-    height += 10;
-  }
+  Array(Number(value))
+    .fill('')
+    .map(() => {
+      refs.box.insertAdjacentHTML(
+        'beforeend',
+        `<div style="width: ${width}px; height: ${height}px;
+        background-color: ${getRandomHexColor()};"></div >`
+      );
+
+      width += 10;
+      height += 10;
+    });
 };
 
 const destroyBoxes = () => {
